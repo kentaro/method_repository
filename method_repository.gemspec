@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = MethodRepository::VERSION
   gem.authors       = ["Kentaro Kuribayashi"]
   gem.email         = ["kentarok@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Extracting redandunt code and commonalizing it in a different way.}
+  gem.summary       = %q{Extracting redandunt code and commonalizing it in a different way}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
