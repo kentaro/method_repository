@@ -1,4 +1,4 @@
-# MethodRepository
+# MethodRepository  [![BuildStatus](https://secure.travis-ci.org/kentaro/method_repository.png)](http://travis-ci.org/kentaro/method_repository)
 
 Extracting redandunt code and commonalizing it in a different way.
 

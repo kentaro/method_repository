@@ -12,6 +12,8 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{Extracting redandunt code and commonalizing it in a different way}
   gem.homepage      = "https://github.com/kentaro/method_repository"
 
+  gem.required_ruby_version = '>= 1.9.2'
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})

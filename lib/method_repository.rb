@@ -38,8 +38,8 @@ module MethodRepository
       klasses[:in].each do |klass|
         @targets[klass] ||= []
         @targets[klass] << {
-          :name  => name,
-          :block => block,
+          name:  name,
+          block: block,
         }
       end
     end
