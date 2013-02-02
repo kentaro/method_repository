@@ -117,7 +117,7 @@ In this case, the methods in `Repository` are, of course, defined as instance me
 
 Add this line to your application's Gemfile:
 
-    gem 'inserts'
+    gem 'method_repository'
 
 And then execute:
 
@@ -125,7 +125,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install inserts
+    $ gem install method_repository
 
 ## Contributing
 
