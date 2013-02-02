@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kentarok@gmail.com"]
   gem.description   = %q{Extracting redandunt code and commonalizing it in a different way.}
   gem.summary       = %q{Extracting redandunt code and commonalizing it in a different way}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/kentaro/method_repository"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
