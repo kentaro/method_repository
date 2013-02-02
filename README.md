@@ -1,10 +1,10 @@
 # MethodRepository  [![BuildStatus](https://secure.travis-ci.org/kentaro/method_repository.png)](http://travis-ci.org/kentaro/method_repository)
 
-Extracting redandunt code and commonalizing it in a different way.
+Extracting redundant code and commonalizing it in a different way.
 
 ## Problem
 
-To extract redandunt codes into a method to commonalize them is a usual strategy for OOP. It allows us to streamline our codes and modify at one stop even though the method is used at anywhere, anytimes.
+To extract redundant codes into a method to commonalize them is a usual strategy for OOP. It allows us to streamline our codes and modify at one stop even though the method is used at anywhere, anytimes.
 
 I don't like when highly commonalized OOP structure disturbes me from quick tracing where such methods are defined. It's OOP's natural defect, I think. Once  classes/modules are defined, it's inevitable that the classes/modules are inherited/included at anywhere we don't know.
 
@@ -12,9 +12,9 @@ In that way, inheritance/inclusion-based OOP resembles `goto` programming; There
 
 ## Solution
 
-This library provides a "method repository" in which you can add your methods to commonalize redandunt codes here and there in your whole codes, which is just same as usual module usage. However, the methods you define in the "repository" will never be included automatically into other classes/modules unless not permitted explicitely.
+This library provides a "method repository" in which you can add your methods to commonalize redundant codes here and there in your whole codes, which is just same as usual module usage. However, the methods you define in the "repository" will never be included automatically into other classes/modules unless not permitted explicitely.
 
-This is the point; There's no chance the methods in the "repository" appear at somewhere the "repository" don't know. To commonalize redanduncy is our intension, but we don't want the methods to be used where we don't know. The way this library provides solves the problem.
+This is the point; There's no chance the methods in the "repository" appear at somewhere the "repository" don't know. To commonalize redundancy is our intension, but we don't want the methods to be used where we don't know. The way this library provides solves the problem.
 
 ## Usage
 

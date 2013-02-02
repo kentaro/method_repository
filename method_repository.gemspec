@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = MethodRepository::VERSION
   gem.authors       = ["Kentaro Kuribayashi"]
   gem.email         = ["kentarok@gmail.com"]
-  gem.description   = %q{Extracting redandunt code and commonalizing it in a different way.}
-  gem.summary       = %q{Extracting redandunt code and commonalizing it in a different way}
+  gem.description   = %q{Extracting redundant code and commonalizing it in a different way.}
+  gem.summary       = %q{Extracting redundant code and commonalizing it in a different way}
   gem.homepage      = "https://github.com/kentaro/method_repository"
 
   gem.required_ruby_version = '>= 1.9.2'
