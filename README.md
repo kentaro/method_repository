@@ -6,9 +6,9 @@ Extracting redandunt code and commonalizing it in a different way.
 
 To extract redandunt codes into a method to commonalize them is a usual strategy for OOP. It allows us to streamline our codes and modify at one stop even though the method is used at anywhere, anytimes.
 
-I don't like when highly commonalized OOP structure disturbes me from quick tracing where such methods are defined. It's OOP's natural defect, I think. Once  classed/modules are defined, it's inevitable that the classes/modules are inherited/included at anywhere we don't know.
+I don't like when highly commonalized OOP structure disturbes me from quick tracing where such methods are defined. It's OOP's natural defect, I think. Once  classes/modules are defined, it's inevitable that the classes/modules are inherited/included at anywhere we don't know.
 
-In that way, inheritance/inclusion-based OOP resembles `goto` programming; There's no clear reason why some classes/modules are inherited/included by another classes/modules. Even though there's some structural thought in your classes/modules design, such an excessively free inheritance/inclusion prevent them from grasping the whole code quickily.
+In that way, inheritance/inclusion-based OOP resembles `goto` programming; There's no clear reason why some classes/modules are inherited/included by another classes/modules. Even though there's some structural thought in your classes/modules design, such an excessively free inheritance/inclusion prevent us from grasping the whole code quickily.
 
 ## Solution
 
