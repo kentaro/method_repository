@@ -44,7 +44,7 @@ describe MethodRepository do
         expect(Foo.respond_to?(:method2)).to be false
         expect(Bar.respond_to?(:method2)).to be false
         expect(Baz.respond_to?(:method2)).to be true
-        expect(Qux.respond_to?(:method1)).to be false
+        expect(Qux.respond_to?(:method2)).to be false
       }
     end
 
@@ -70,7 +70,7 @@ describe MethodRepository do
         expect(foo.respond_to?(:method2)).to be false
         expect(bar.respond_to?(:method2)).to be false
         expect(baz.respond_to?(:method2)).to be true
-        expect(qux.respond_to?(:method1)).to be false
+        expect(qux.respond_to?(:method2)).to be false
       }
     end
   end
@@ -92,7 +92,7 @@ describe MethodRepository do
       expect(Foo.new.respond_to?(:method2)).to be false
       expect(Bar.new.respond_to?(:method2)).to be false
       expect(Baz.new.respond_to?(:method2)).to be true
-      expect(Qux.new.respond_to?(:method1)).to be false
+      expect(Qux.new.respond_to?(:method2)).to be false
     }
   end
 end

@@ -69,7 +69,7 @@ Qux.respond_to?(:method1) #=> false
 Foo.respond_to?(:method2) #=> false
 Bar.respond_to?(:method2) #=> false
 Baz.respond_to?(:method2) #=> true
-Qux.respond_to?(:method1) #=> false
+Qux.respond_to?(:method2) #=> false
 ```
 
 or
@@ -83,7 +83,7 @@ qux.respond_to?(:method1) #=> false
 foo.respond_to?(:method2) #=> false
 bar.respond_to?(:method2) #=> false
 baz.respond_to?(:method2) #=> true
-qux.respond_to?(:method1) #=> false
+qux.respond_to?(:method2) #=> false
 ```
 
 ### Including
@@ -108,7 +108,7 @@ Qux.new.respond_to?(:method1) #=> false
 Foo.new.respond_to?(:method2) #=> false
 Bar.new.respond_to?(:method2) #=> false
 Baz.new.respond_to?(:method2) #=> true
-Qux.new.respond_to?(:method1) #=> false
+Qux.new.respond_to?(:method2) #=> false
 ```
 
 In this case, the methods in `Repository` are, of course, defined as instance methods of each classes, not singleton methods of each objects.
@@ -117,7 +117,7 @@ In this case, the methods in `Repository` are, of course, defined as instance me
 
 Add this line to your application's Gemfile:
 
-    gem 'inserts'
+    gem 'method_repository'
 
 And then execute:
 
@@ -125,7 +125,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install inserts
+    $ gem install method_repository
 
 ## Contributing
 
