@@ -1,4 +1,4 @@
-require "method_repository/version"
+require_relative "method_repository/version"
 
 module MethodRepository
   def self.included(base)

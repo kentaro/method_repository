@@ -1,5 +1,4 @@
-$:.unshift File.expand_path("../../lib", __FILE__)
-require 'method_repository'
+require_relative '../lib/method_repository'
 
 RSpec.configure do |config|
 end
