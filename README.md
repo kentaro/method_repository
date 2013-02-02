@@ -61,29 +61,29 @@ qux = Qux.new; qux.extend(Repository)
 Only explicitely permitted methods are defined as singleton methods of each classes/objects. That results in:
 
 ```ruby
-Foo.respond_to?(:method1)) #=> true
-Bar.respond_to?(:method1)) #=> true
-Baz.respond_to?(:method1)) #=> false
-Qux.respond_to?(:method1)) #=> false
+Foo.respond_to?(:method1) #=> true
+Bar.respond_to?(:method1) #=> true
+Baz.respond_to?(:method1) #=> false
+Qux.respond_to?(:method1) #=> false
 
-Foo.respond_to?(:method2)) #=> false
-Bar.respond_to?(:method2)) #=> false
-Baz.respond_to?(:method2)) #=> true
-Qux.respond_to?(:method1)) #=> false
+Foo.respond_to?(:method2) #=> false
+Bar.respond_to?(:method2) #=> false
+Baz.respond_to?(:method2) #=> true
+Qux.respond_to?(:method1) #=> false
 ```
 
 or
 
 ```ruby
-foo.respond_to?(:method1)) #=> true
-bar.respond_to?(:method1)) #=> true
-baz.respond_to?(:method1)) #=> false
-qux.respond_to?(:method1)) #=> false
+foo.respond_to?(:method1) #=> true
+bar.respond_to?(:method1) #=> true
+baz.respond_to?(:method1) #=> false
+qux.respond_to?(:method1) #=> false
 
-foo.respond_to?(:method2)) #=> false
-bar.respond_to?(:method2)) #=> false
-baz.respond_to?(:method2)) #=> true
-qux.respond_to?(:method1)) #=> false
+foo.respond_to?(:method2) #=> false
+bar.respond_to?(:method2) #=> false
+baz.respond_to?(:method2) #=> true
+qux.respond_to?(:method1) #=> false
 ```
 
 ### Including
@@ -100,15 +100,15 @@ Qux.send(:include, Repository)
 Results in:
 
 ```ruby
-Foo.new.respond_to?(:method1)) #=> true
-Bar.new.respond_to?(:method1)) #=> true
-Baz.new.respond_to?(:method1)) #=> false
-Qux.new.respond_to?(:method1)) #=> false
+Foo.new.respond_to?(:method1) #=> true
+Bar.new.respond_to?(:method1) #=> true
+Baz.new.respond_to?(:method1) #=> false
+Qux.new.respond_to?(:method1) #=> false
 
-Foo.new.respond_to?(:method2)) #=> false
-Bar.new.respond_to?(:method2)) #=> false
-Baz.new.respond_to?(:method2)) #=> true
-Qux.new.respond_to?(:method1)) #=> false
+Foo.new.respond_to?(:method2) #=> false
+Bar.new.respond_to?(:method2) #=> false
+Baz.new.respond_to?(:method2) #=> true
+Qux.new.respond_to?(:method1) #=> false
 ```
 
 In this case, the methods in `Repository` are, of course, defined as instance methods of each classes, not singleton methods of each objects.
