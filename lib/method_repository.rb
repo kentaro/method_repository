@@ -1,4 +1,4 @@
-require "method_repository/version"
+require_relative "method_repository/version"
 
 module MethodRepository
   def self.included(base)
@@ -11,8 +11,7 @@ module MethodRepository
       klass_name = base.class.to_s == 'Class' ? base.to_s : base.class.to_s
 
       if (methods = @targets[klass_name])
-        singleton_class = class << base; self; end
-        singleton_class.class_eval do
+        base.singleton_class.class_eval do
           methods.each do |method|
             define_method method[:name], method[:block]
           end
