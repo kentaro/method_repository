@@ -8,7 +8,7 @@ To extract redundant codes into a method to commonalize them is a usual strategy
 
 I don't like when highly commonalized OOP structure disturbes me from quick tracing where such methods are defined. It's OOP's natural defect, I think. Once  classes/modules are defined, it's inevitable that the classes/modules are inherited/included at anywhere we don't know.
 
-In that way, inheritance/inclusion-based OOP resembles `goto` programming; There's no clear reason why some classes/modules are inherited/included by another classes/modules. Even though there's some structural thought in your classes/modules design, such an excessively free inheritance/inclusion prevent us from grasping the whole code quickily.
+In that way, inheritance/inclusion-based OOP resembles `goto` programming; There's no clear reason why some classes/modules are inherited/included by another classes/modules. Even though there's some structural thought in your classes/modules design, such an excessively free inheritance/inclusion prevents us from grasping the whole code quickily.
 
 ## Solution
 
@@ -37,6 +37,43 @@ class Qux; end
   * `method1` is declared it can be inserted in `Foo` and `Bar`
   * `method2` is declared it can be inserted in only `Baz`
   * No method is declared it can be inserted in `Qux`
+
+### Limit Extending/Including in a Lump
+
+You can also limit extending/including in a lump, not designating classes using `insert` method at method definitions, like below:
+
+```
+module Extendable
+  include MethodRepository
+
+  extendable_by 'Hoge'
+end
+
+module Includable
+  include MethodRepository
+
+  includable_by 'Hoge'
+end
+
+class Hoge; end
+class Fuga; end
+```
+
+In this way:
+
+```
+Hoge.extend(Extendable)
+Hoge.send(:include, Includable)
+```
+
+works as you see, however:
+
+```
+Fuga.extend(Extendable)
+Fuga.send(:include, Includable)
+```
+
+raises `MethodRepository::NotPermittedError`.
 
 ### Extending
 
